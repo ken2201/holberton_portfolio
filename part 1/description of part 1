@@ -1,0 +1,106 @@
+ Project Development Documentation: Personal Budget Manager
+
+1. Idea Development and Evaluation
+
+Several project ideas were considered before selecting the final MVP. Below is a summary of each:
+
+A. Video Game Price Tracker
+
+* Strengths:
+
+  * Popular and useful for gamers.
+  * Possibility to integrate with multiple APIs.
+* eaknesses:
+
+  * Dependence on external APIs which may have rate limits, access restrictions, or unstable documentation.
+  * Risk of being blocked or limited without a paid subscription.
+* Reason for Rejection:
+
+  * Too much dependency on third-party APIs.
+  * Potential legal or technical issues with scraping or using unofficial APIs.
+
+B. Soccer Jersey Price Tracker
+
+* trengths:
+
+  * Niche audience appeal.
+  * Could be monetized if successful.
+* Weaknesses :
+
+  * Same issues as above with APIs.
+  * More limited audience.
+* Reason for Rejection:
+
+  * Same as the video game tracker: reliance on APIs and data access risks.
+
+C. Personal Budget Manager (Selected MVP)
+
+* Strengths:
+
+  * No external API dependency.
+  * Highly relevant and useful for students and young professionals.
+  * Clear and feasible MVP within a 1.5-month timeline.
+* eaknesses:
+
+  * Common project theme.
+  * Requires extra effort on UX/UI (user experience/user interferance) to stand out.
+* Reason for Selection:
+
+  * Feasibility within time limits.
+  * Fully controllable data and features.
+  * Real-world applicability and usefulness.
+
+---
+
+ 2. Summary of the Selected MVP
+
+Project Title:Personal Budget Manager
+
+Project Description:
+A web-based application that allows users to track their income, expenses, and savings goals. Users can categorize their spending, set monthly budgets, and view graphical summaries of their financial status.
+
+Core Features for MVP:
+
+* Add and categorize expenses.
+* Display list of expenses.
+* Show total and category-based spending.
+* Set and track monthly budget goals.
+* Basic charts for visualizing spending.
+* Data saved using local storage (or optionally a simple backend with FastAPI and SQLite).
+
+Rationale:
+
+* Offers practical value to users.
+* Easy to test and demonstrate.
+* Can be extended in the future with user accounts, database storage, or mobile compatibility.
+
+Potential Impact:
+
+* Helps users gain financial awareness and control.
+* A solid portfolio piece demonstrating frontend and backend development.
+
+---
+
+3. Team Formation and Development Process
+
+Team:
+
+* This project is being developed individually by "Ken Kersy NDAYISHIMIYE".
+
+Process Followed:
+
+1. Brainstormed and evaluated multiple ideas based on feasibility, utility, and risk.
+2. Selected the budget manager idea due to its simplicity and usefulness.
+3. Broke down the MVP into weekly milestones.
+4. Chose Vue.js for the frontend (or React as an alternative) and FastAPI for potential backend support.
+5. Development will follow an agile, iterative approach with continuous testing and feedback.
+
+Tools:
+
+* Git for version control.
+* GitHub for project hosting and deployment.
+* Trello or Notion for task management.
+* VS Code as the development environment.
+* Optional: Chart.js for visual components.
+
+---
