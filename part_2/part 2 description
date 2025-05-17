@@ -12,7 +12,7 @@ The Personal Budget Manager aims to provide users—especially students and youn
 - **Measurable**: Achieve at least 90% functionality coverage of the MVP features within 4-6 weeks, including adding/displaying categorized expenses and budget tracking.
 - **Achievable**: Implement all frontend features using Vue.js (or React) and optionally connect to a backend using FastAPI and SQLite within 1-1.5 months.
 - **Relevant**: Address the real-world need for simple, accessible financial tools tailored to individuals without requiring external API integrations.
-- **Time-bound**: Complete the MVP by the end of the 6th development week, including testing and deployment.
+- **Time-bound**: Complete the MVP by the end of the 4th-6th development week, including testing and deployment.
 
 ---
 
