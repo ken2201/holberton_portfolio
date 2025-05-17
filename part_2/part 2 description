@@ -1,0 +1,70 @@
+# Project Charter – Personal Budget Manager
+
+---
+
+## 1. Project Objectives
+
+**Purpose**:  
+The Personal Budget Manager aims to provide users—especially students and young professionals—with a simple yet effective tool to manage their personal finances. The application allows users to track income, categorize expenses, set monthly budgets, and visualize their financial data.
+
+**SMART Objectives**:
+- **Specific**: Develop a web-based application where users can log income and expenses, categorize them, and track budget goals.
+- **Measurable**: Achieve at least 90% functionality coverage of the MVP features within 4-6 weeks, including adding/displaying categorized expenses and budget tracking.
+- **Achievable**: Implement all frontend features using Vue.js (or React) and optionally connect to a backend using FastAPI and SQLite within 1-1.5 months.
+- **Relevant**: Address the real-world need for simple, accessible financial tools tailored to individuals without requiring external API integrations.
+- **Time-bound**: Complete the MVP by the end of the 6th development week, including testing and deployment.
+
+---
+
+## 2. Stakeholders and Roles
+
+| Stakeholder               | Role / Responsibility                                        |
+|---------------------------|--------------------------------------------------------------|
+| Ken Kersy NDAYISHIMIYE    | Project Owner, Lead Developer (Frontend & Backend), Tester   |
+| Academic Supervisor       | Provides feedback, monitors progress, validates deliverables |
+| Peer Reviewers / Classmates | Provide feedback during presentations and demos            |
+
+---
+
+## 3. Scope
+
+### In-Scope (MVP Features):
+- Add income and expense entries.
+- Categorize transactions (e.g., food, transport, rent).
+- Set monthly budget goals.
+- Display spending summaries by category and time.
+- Basic data visualizations (bar/pie charts).
+- Local storage for data persistence (or FastAPI + SQLite backend).
+- Simple, responsive user interface.
+
+### Out-of-Scope:
+- User authentication and multi-user support.
+- Advanced financial forecasting.
+- Integration with bank APIs or real-time currency data.
+- Mobile application (unless extended in future versions).
+- Export/import functionality for data (CSV/PDF).
+
+---
+
+## 4. Risks and Mitigation Strategies
+
+| Risk                                       | Likelihood | Impact | Mitigation Strategy                                 |
+|--------------------------------------------|------------|--------|-----------------------------------------------------|
+| Time overrun / underestimating tasks       | Medium     | High   | Use Trello/Notion for task breakdown and tracking   |
+| Bugs or issues with new frameworks         | Medium     | Medium | Prioritize testing and commit frequently to GitHub  |
+| Loss of local data                         | High       | Medium | Implement optional backend or backup system         |
+| Scope creep                                | Medium     | Medium | Stick to MVP scope and freeze features after week 2 |
+
+---
+
+## 5. High-Level Plan (Timeline)
+
+| Week   | Phase                                | Deliverables                                           |
+|--------|--------------------------------------|--------------------------------------------------------|
+| Week 1 | Planning & Design                    | Finalize MVP features, UI mockups, tech stack choice   |
+| Week 2 | Frontend Setup & Initial Layout      | Vue.js or React setup, basic page structure            |
+| Week 3 | Expense & Income Features            | Add, edit, delete transactions, local storage logic    |
+| Week 4 | Budget Tracking & Visualizations     | Budget input, bar/pie charts using Chart.js            |
+| Week 5 | Polish UI + Optional Backend         | FastAPI & SQLite setup, connect to frontend            |
+| Week 6 | Testing, Debugging & Final Deployment| Full testing, documentation, deployment on GitHub      |
+
