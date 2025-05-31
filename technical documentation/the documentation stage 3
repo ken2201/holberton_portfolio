@@ -1,0 +1,132 @@
+# 📘 Technical Documentation – Personal Budget Manager
+
+---
+
+## 1. User Stories and Mockups
+
+### 🧑‍💻 Prioritized User Stories
+
+| ID  | User Story                                                                 | Priority |
+|-----|----------------------------------------------------------------------------|----------|
+| US1 | As a user, I want to add income and expenses with categories              | High     |
+| US2 | As a user, I want to see a list of all my transactions                    | High     |
+| US3 | As a user, I want to track my spending by category                        | High     |
+| US4 | As a user, I want to set and monitor a monthly budget                     | Medium   |
+| US5 | As a user, I want to view charts summarizing my spending habits          | Medium   |
+| US6 | As a user, I want my data to be saved locally or backed up               | Medium   |
+
+### 🎨 Mockups
+- Home Dashboard  
+- Add Transaction Form  
+- Budget Setup Page  
+- Charts & Summary View  
+
+
+---
+
+## 2. System Architecture
+
+- **Frontend**: Vue.js or React (SPA)  
+- **Backend**: FastAPI (Python)  
+- **Database**: SQLite (lightweight local database)
+
+---
+
+## 3. Components, Classes, and Database Design
+
+### 🧩 Frontend Components
+
+- `TransactionForm`: Add income/expenses  
+- `TransactionList`: View transactions  
+- `BudgetTracker`: Set/view monthly budget  
+- `SpendingSummary`: Summary by category  
+- `SpendingChart`: Bar/pie charts with Chart.js  
+
+### 🗃️ Database Schema
+
+**transactions**
+- id (PK)
+- type (income/expense)
+- category
+- amount
+- date
+- user_id (optional FK)
+
+**budgets**
+- id (PK)
+- month
+- amount
+- user_id (optional FK)
+
+**users** (optional)
+- id (PK)
+- name
+- email
+
+
+---
+
+## 4. Sequence Diagrams
+
+---
+
+## 5. API Specifications
+
+| Method | Endpoint                | Description                        |
+|--------|-------------------------|------------------------------------|
+| GET    | /api/transactions       | List all transactions              |
+| POST   | /api/transactions       | Add a new transaction              |
+| DELETE | /api/transactions/{id}  | Delete a transaction               |
+| GET    | /api/budget             | Get current monthly budget         |
+| POST   | /api/budget             | Set/update monthly budget          |
+| GET    | /api/summary            | Get spending summary by category   |
+
+> No external APIs are used in the MVP.
+
+---
+
+## 6. SCM and QA Plans
+
+### 🗂️ Source Control
+
+- Git for version control  
+- GitHub repository  
+- Branch strategy: main branch + feature branches  
+- Semantic commit messages: `feat:`, `fix:`, `chore:`
+
+### ✅ Quality Assurance
+
+- Manual testing (frontend and backend)  
+- Unit tests with `pytest` (backend) and `Jest` (frontend)  
+- Linting with ESLint (frontend) and Black (backend)  
+- Trello or Notion for task tracking  
+- Weekly demos and checkpoints  
+
+---
+
+## 7. Technical Justifications
+
+| Layer        | Technology        | Justification                                     |
+|--------------|--------------------|--------------------------------------------------|
+| Frontend     | Vue.js or React    | Modern, component-based, large community         |
+| Backend      | FastAPI            | Fast, async, Pythonic, easy integration           |
+| Database     | SQLite             | Lightweight, file-based, perfect for MVP          |
+| Charts       | Chart.js           | Simple, customizable, easy integration            |
+| SCM/QA       | Git, GitHub, ESLint| Industry standard for small teams and solo devs  |
+
+---
+
+## 8. High-Level Plan (Backend-first, 1-1.5 months)
+
+| Week    | Phase                                      |
+|---------|---------------------------------------------|
+| Week 1  | Planning, mockups, backend setup (FastAPI) |
+| Week 2  | Backend API endpoints & DB integration     |
+| Week 3  | Backend testing & validation               |
+| Week 4  | Frontend core components (forms, lists)    |
+| Week 5  | Budget logic & charts integration          |
+| Week 6  | Testing, QA, final documentation & deploy  |
+
+**Total Duration**: 1 to 1.5 months
+
+---
